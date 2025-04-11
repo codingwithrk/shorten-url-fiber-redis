@@ -29,27 +29,37 @@ https://github.com/codingwithrk/shorten-url-fiber-redis.git
 cd shorten-url-fiber-redis
 ```
 
-3. Build the application using docker (If you have docker installed)
+3. Create a `.env` file in the root directory and add the following environment variables
+
+```bash
+DB_ADDR="db:6379"
+DB_PASS=""
+APP_PORT=":3000"
+DOMAIN="localhost:3000"
+API_QUOTA=10
+```
+
+4. Build the application using docker (If you have docker installed)
 
 ```bash
 docker-compose up -d
 ```
 
-4. If you don't have docker installed, you can run Redis locally. Make sure Redis is running on port 6379.
+5. If you don't have docker installed, you can run Redis locally. Make sure Redis is running on port 6379.
 
-5. Install the required Go packages
+6. Install the required Go packages
 
 ```bash
 go mod tidy
 ```
 
-6. Run the application (Change the directory to api)
+7. Run the application (Change the directory to api)
 
 ```bash
 go run main.go
 ```
 
-7. Open postman and test the API
+8. Open postman and test the API
 
 ### Base URL
 
