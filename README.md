@@ -11,7 +11,7 @@ Shorten URL is a simple web application that allows users to shorten long URLs. 
 
 ## Requirements
 
-- Go 1.18 or later
+- Go 1.24 or later
 - Redis
 - Docker (optional, for running Redis in a container)
 
@@ -29,7 +29,7 @@ https://github.com/codingwithrk/shorten-url-fiber-redis.git
 cd shorten-url-fiber-redis
 ```
 
-3. Create a `.env` file in the root directory and add the following environment variables
+3. Create a `.env` file in the `/api` directory and add the following environment variables
 
 ```bash
 DB_ADDR="db:6379"
